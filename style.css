@@ -1,0 +1,285 @@
+body{
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width:720px) {
+    
+    /* -------------------------------------------------------------------------------- */
+/* entire view page of dice game */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff;
+    position: fixed;
+    overflow: hidden;
+}
+/* -------------------------------------------------------------------------------- */
+/* Heading of the dice game */
+
+.content{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    top: 1vh;
+}
+#who{
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+/* -------------------------------------------------------------------------------- */
+/* body of the dice game */
+
+    .body{
+        position: relative;
+        top: 3vh;
+        width: 100vw;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10vh 20vh 10 20vh;
+    }
+/* -------------------------------------------------------------------------------- */
+/* player column  */
+    .item{
+        min-width: 30vw;
+        height: 70vh;
+        position: relative;
+        margin: -5vh 2vh;
+        text-align: center;
+        overflow: hidden;
+    }
+/* -------------------------------------------------------------------------------- */
+/* player button  */
+    .item button{
+        margin-top: 1vh ;
+        padding: 3.5vh 4vh;
+        border-radius: 3vh; 
+        position: relative;
+        color:black ;
+        font-weight: 700;
+        font-size: 20px;
+}
+/* -------------------------------------------------------------------------------- */
+/* player Name  */
+    .item h2{
+        background-color: rgb(60, 110, 3);
+        font-size:3rem ;
+    }
+
+    #diceValueP1{
+        font-size: 4rem;
+        font-family:'poppins' sans-serif;
+        position: relative;  
+    }
+    #diceValueP2{
+        font-size: 4rem;
+        font-family:'poppins' sans-serif;
+        position: relative;   
+    }
+    #p1Score{
+        font-size: 2rem;
+        font-family: 'poppins';
+        position: relative;
+    }
+    #p2Score{
+        font-size: 2rem;
+        font-family: 'poppins';
+        position: relative;
+    }
+    .item button:hover{
+        background-color: rgb(17, 73, 73);
+        padding: 3.5vh 4.5vh;
+        border-radius: 3vh;
+    }
+/* -------------------------------------------------------------------------------- */
+ /* rolling dice  */
+    .Dice{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .img{
+        margin-top: 5vh;
+        background-color: #fff;
+        border: 15px solid rgb(21, 163, 149);
+        border-radius: 25px;
+        width: 250px;
+        height: 250px;
+    }
+    #diceImg{
+        width: 250px;
+        height: 250px;
+    }
+/* -------------------------------------------------------------------------------- */
+/* reset button */
+    .reset{
+        position: fixed;
+        margin-left: 43.5%;
+        margin-top: -5vh;
+        display:inline-block
+        
+    }
+    .reset button{
+        color: rgb(5, 26, 5);
+        padding: 3vh 5vh;
+        border-radius: 3vh;
+        background-color: #fff;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .reset button:hover{
+        color: #fff;
+        background-color:rgb(5, 26, 5);
+        padding: 3.5vh 5.5vh;
+        border-radius: 3.5vh;
+    }
+
+}
+
+@media (max-width:720px) {
+    
+    /* -------------------------------------------------------------------------------- */
+/* entire view page of dice game */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff;
+    position: fixed;
+    overflow: hidden;
+
+
+}
+/* -------------------------------------------------------------------------------- */
+/* Heading of the dice game */
+
+.content{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 1vh;
+    top: 1vh;
+}
+#who{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+/* -------------------------------------------------------------------------------- */
+/* body of the dice game */
+
+    .body{
+        position: relative;
+        top: 3vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+/* -------------------------------------------------------------------------------- */
+/* player column  */
+    .item{
+        min-width: 30vw;
+        height: 70vh;
+        position: relative;
+        margin: -5vh 2vh;
+        text-align: center;
+        overflow: hidden;
+    }
+/* -------------------------------------------------------------------------------- */
+/* player button  */
+    .item button{
+        margin-top: 1vh ;
+        padding: 1vh 2vh;
+        border-radius: 3vh; 
+        position: relative;
+        color:black ;
+        font-weight: 700;
+        font-size: 20px;
+}
+/* -------------------------------------------------------------------------------- */
+/* player Name  */
+    .item h2{
+        background-color: rgb(60, 110, 3);
+        font-size:1.5rem ;
+    }
+
+    #diceValueP1{
+        font-size: 4rem;
+        font-family:'poppins' sans-serif;
+        position: relative;  
+    }
+    #diceValueP2{
+        font-size: 4rem;
+        font-family:'poppins' sans-serif;
+        position: relative;   
+    }
+    #p1Score{
+        font-size: 1rem;
+        font-family: 'poppins';
+        position: relative;
+    }
+    #p2Score{
+        font-size: 1rem;
+        font-family: 'poppins';
+        position: relative;
+    }
+    .item button:hover{
+        background-color: rgb(17, 73, 73);
+        padding: 1.5vh 2.5vh;
+        border-radius: 3vh;
+    }
+/* -------------------------------------------------------------------------------- */
+ /* rolling dice  */
+    .Dice{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .img{
+        margin-top: 10vh;
+        background-color: #fff;
+        width: 120px;
+        height: 150px;
+        border: 6px solid rgb(21, 163, 149);
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    #diceImg{
+        width: 120px;
+        height: 150px;
+    }
+/* -------------------------------------------------------------------------------- */
+/* reset button */
+    .reset{
+        position: fixed;
+        margin-left: 34%;
+        margin-top: -5vh;
+        display:inline-block
+        
+    }
+    .reset button{
+        color: rgb(5, 26, 5);
+        padding: 1vh 3vh;
+        border-radius: 3vh;
+        background-color: #fff;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .reset button:hover{
+        color: #fff;
+        background-color:rgb(5, 26, 5);
+        padding: 1.5vh 3.5vh;
+        border-radius: 3.5vh;
+    }
+
+}
+
+
+

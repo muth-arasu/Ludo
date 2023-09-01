@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ------------------ title of web-app ------------------ -->
+    <title>Dice Game</title>
+<!-- ------------------ linking font family ------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- ------------------ linking css file ------------------ -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+ <!-- -------------------------Entire view of the page ---------------------------- -->
+    <div class="container">
+    <!-- ------------------------Heading of the page ---------------------------------- -->
+
+        <div class="content">
+            <h4>Let's play Dice</h4>
+            <h1 id="who"></h1>
+        </div>
+
+        <div class="body">
+    <!-- ------------------ body of the game ------------------ -->
+        <!-- ------------------ player-1 columm ------------------ -->
+            <div class="item player1">
+                <h2>player1</h2>
+                <h1 class="count" id="diceValueP1"></h1>
+                <h1 id="p1Score"></h1>
+                <button type="button" id="pB1" onclick="randomNumber1()">Roll Now</button>
+            </div>
+        <!-- ------------------ center column ------------------ -->
+            <div class="item Dice">
+                <div class="img"><img id="diceImg"src="" alt="">
+                </div>
+            </div>
+        <!-- ------------------ player-2 columm------------------ -->
+            <div class="item player2">
+                <h2>player2</h2>
+                <h1 class="count" id="diceValueP2" ></h1>
+                <h1 id="p2Score"></h1>
+                <button type="button" id="pB2" onclick="randomNumber2()">Roll Now</button>
+            </div>
+        </div>
+    <!-- ------------------ reset button ------------------ -->
+        <div class="reset">
+            <button type="reset" id="reset" onclick="reset()"> Reset </button>
+        </div>
+    </div>
+
+<!-- ------------------ script file link ------------------ -->
+    <script src="./index.js"></script>
+</body>
+</html>

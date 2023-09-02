@@ -22,22 +22,24 @@ const  ableBtn=(r,l,c)=> {
     pB2.disabled = l;
     resetButton.disabled=c; 
 }
+let scorep1 =0;
+let scorep2 =0;
 const reset =()=>{
     diceImg.setAttribute("src",`./images/Click_Roll_Now.png`);
     let num=Math.floor(Math.random()*10);
      if(num%2==0 || num==0){
         ableBtn(false,true,true);
          heading.innerHTML      ="Player 1 has to Play"; 
-         p1Score.innerHTML      =`Your Score : ${0}`; 
-         p2Score.innerHTML      =`Your Score : ${0}`; 
+         p1Score.innerHTML      =`Your Score : ${scorep1=0}`; 
+         p2Score.innerHTML      =`Your Score : ${scorep2=0}`; 
          diceValueP1.innerHTML  =`${0}`; 
          diceValueP2.innerHTML  =`${0}`;    
      }
      else { 
          ableBtn(true,false,true); 
          heading.innerHTML     ="Player 2 has to Play";
-         p1Score.innerHTML     =`Your Score : ${0}`;
-         p2Score.innerHTML     =`Your Score : ${0}`; 
+         p1Score.innerHTML     =`Your Score : ${scorep1=0}`;
+         p2Score.innerHTML     =`Your Score : ${scorep2=0}`; 
          diceValueP1.innerHTML =`${0}`; 
          diceValueP2.innerHTML =`${0}`;
      }
@@ -55,10 +57,12 @@ const randomNumber2 =()=>{
     }   
 
 // ---------------- player-1 score function ----------------
-let scorep1 =0;
+
 const currentScore1=(dice)=>{
+    p2Score.innerHTML     =`Your Score : ${scorep1}`; 
     scorep1+=dice;
     if (scorep1 !== 40 && scorep1< 40){
+        p1Score.innerHTML      = `Your Score : ${0}`
         ableBtn(true,false,true);
         diceImg.setAttribute("src",`./images/${dice}.png`);
         diceValueP1.innerHTML  = `${dice}`;
@@ -73,8 +77,10 @@ const currentScore1=(dice)=>{
    }  
 }
 // ---------------- player-2 dice function ----------------
-let scorep2=0;
+
 const currentScore2=(dice)=>{
+    p1Score.innerHTML     =`Your Score : ${scorep2}`;
+  
     scorep2+=dice;
     if (scorep2!==40 && scorep2 < 40){
         ableBtn(false,true,true);

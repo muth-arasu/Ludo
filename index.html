@@ -29,14 +29,17 @@
             <div class="item player1">
                 <h2>player1</h2>
                 <h1 class="count" id="diceValueP1"></h1>
-                <h1 id="p1Score"></h1>
+                <h1 id="p1Score" ></h1>
                 <button type="button" id="pB1" onclick="randomNumber1()">Roll Now</button>
             </div>
         <!-- ------------------ center column ------------------ -->
-            <div class="item Dice">
-                <div class="img"><img id="diceImg"src="" alt="">
+            <div class="item  diceCenter">
+                <div class="img"><img  style="max-width: 250px; max-height: 250px; border: 10px solid rgb(44, 132, 122); border-radius: 25px;" id="diceImg"src="" alt="">
                 </div>
-            </div>
+                <div class="reset">
+                    <button type="reset" id="reset" onclick="reset()"> Reset </button>
+                </div>
+             </div>
         <!-- ------------------ player-2 columm------------------ -->
             <div class="item player2">
                 <h2>player2</h2>
@@ -44,11 +47,10 @@
                 <h1 id="p2Score"></h1>
                 <button type="button" id="pB2" onclick="randomNumber2()">Roll Now</button>
             </div>
+
         </div>
     <!-- ------------------ reset button ------------------ -->
-        <div class="reset">
-            <button type="reset" id="reset" onclick="reset()"> Reset </button>
-        </div>
+
     </div>
 
 <!-- ------------------ script file link ------------------ -->

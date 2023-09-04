@@ -59,10 +59,10 @@ const randomNumber2 =()=>{
 // ---------------- player-1 score function ----------------
 
 const currentScore1=(dice)=>{
-    p2Score.innerHTML     =`Your Score : ${scorep1}`; 
+    p1Score.innerHTML     =`Your Score : ${scorep1}`; 
     scorep1+=dice;
     if (scorep1 !== 40 && scorep1< 40){
-        p1Score.innerHTML      = `Your Score : ${0}`
+        p1Score.innerHTML      = `Your Score : ${scorep1}`
         ableBtn(true,false,true);
         diceImg.setAttribute("src",`./images/${dice}.png`);
         diceValueP1.innerHTML  = `${dice}`;
@@ -79,7 +79,7 @@ const currentScore1=(dice)=>{
 // ---------------- player-2 dice function ----------------
 
 const currentScore2=(dice)=>{
-    p1Score.innerHTML     =`Your Score : ${scorep2}`;
+    p2Score.innerHTML     =`Your Score : ${scorep2}`;
   
     scorep2+=dice;
     if (scorep2!==40 && scorep2 < 40){
@@ -93,7 +93,7 @@ const currentScore2=(dice)=>{
         ableBtn(true,true,false);
         diceImg.setAttribute("src",`./images/Click_reset.png`);
         p2Score.innerHTML       =`Your Score :  ${scorep2}`;
-        heading.innerHTML       =`plyer Two won first score ${scorep2}`;   
+        heading.innerHTML       =`Congratulation 🎉 plyer Two won first score ${scorep2}`;   
     }
 }
 
